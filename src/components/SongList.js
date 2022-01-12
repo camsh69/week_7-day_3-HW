@@ -5,7 +5,7 @@ import "./SongList.css";
 const SongList = ({songList}) => {
 
     const songItems = songList.map((song, index) => {
-        return <SongItem songName={song['im:name'].label} artist={song['im:artist'].label} songPage={song['im:collection'].link.attributes.href} artistPage={song['im:artist'].attributes.href} index={index} img={song['im:image']['2'].label} key={index}/>
+        return <SongItem songName={song['im:name'].label} artist={song['im:artist'].label} songPage={song.link['0'].attributes.href} artistPage={song['im:artist'].attributes.href} index={index} img={song['im:image']['2'].label} key={index}/>
     })
 
     return (
