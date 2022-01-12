@@ -6,7 +6,7 @@ const SongContainer = () => {
     const [songList, setSongList] = useState([]);
 
     const getSongs = () => {
-        fetch('https://itunes.apple.com/gb/rss/topsongs/limit=20/json')
+        fetch('https://itunes.apple.com/gb/rss/topsongs/limit=20/genre=21/json')
         .then(response => response.json())
         .then(data => setSongList(data.feed.entry));
     }
