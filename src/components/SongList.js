@@ -11,7 +11,7 @@ const SongList = ({songList}) => {
     return (
         <section>
             <h1>UK 'Rock' Top 20</h1>
-            <div class="card-container">
+            <div className="card-container">
             {songItems}
             </div>
         </section>

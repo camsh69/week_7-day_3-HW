@@ -7,12 +7,12 @@ const SongItem = ({songName, artist, index, img, artistPage, songPage}) => {
 
     return(
        
-            <div class="card">
+            <div className="card">
             <img src={img}></img>
-            <div class="container">
+            <div className="container">
                 <h4>{position}. {songName}</h4>
                 <div>
-                    <a class="preview" href={songPage}>Preview &gt; &gt;</a>
+                    <a className="preview" href={songPage}>Preview &gt; &gt;</a>
                 </div>
                 <p><a href={artistPage}>{artist}</a></p>
             </div>
